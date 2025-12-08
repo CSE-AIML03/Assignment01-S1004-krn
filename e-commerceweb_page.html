@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Watch Store</title>
+
+    <style>
+        /* Whole page style */
+        body{
+            font-family: Arial, sans-serif;    /* font */
+            background-color: #f2f2f2;        /* page color */
+            margin: 0;                        /* remove default margin */
+        }
+
+        /* Top heading bar */
+        .header{
+            background-color: #222;           /* color */
+            color: white;                     /* text color */
+            text-align: center;               /* text style */
+            padding: 10px;                    /* padding */
+        }
+
+        /* Main product box */
+        .product-box{
+            background-color: white;
+            width: 400px;
+            margin: 30px auto;
+            padding: 15px;
+            border: 2px solid #dddddd;
+            border-radius: 8px;
+            height:auto;
+            
+}
+
+
+        /* Product image */
+        .product-img{
+            width: 100%;               /* width */
+            height: 200px;                 /* height */
+            border-radius: 5px;               /* round corners */
+            border: 1px solid #ccc;           /* border */
+        }
+
+        /* Text styles */
+        .title{
+            font-size: 20px;                  /* text size */
+            font-weight: bold;                /* text bold */
+            margin-top: 10px;                 /* margin */
+            color: #222;                      /* text color */
+        }
+
+        .brand{
+            font-size: 13px;
+            color: gray;
+            margin-bottom: 8px;
+        }
+
+        .price{
+            font-size: 22px;
+            color: #e63946;                   /* red color */
+            margin: 5px 0;                    /* margin top & bottom */
+        }
+
+        .old-price{
+            font-size: 13px;
+            color: #888;
+            text-decoration: line-through;    /* cut line on text */
+        }
+
+        .info{
+            font-size: 12px;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        /* Button style */
+        .btn{
+            background-color: #222;           /* button color */
+            color: white;                     /* text color */
+            border: none;                     /* no border line */
+            padding: 8px 12px;                /* padding */
+            margin-top: 10px;                 /* margin top */
+            border-radius: 4px;               /* round corners */
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: #444;           /* color change on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Smart Watch Store</h1>
+    </div>
+
+    <!-- Product Card -->
+    <div class="product-box">
+        <img class="product-img" src="https://m.media-amazon.com/images/I/71XA0QCW5lL.jpg" alt="Smart Watch">
+
+        <div class="title">Smart Fit Watch</div>
+        <div class="brand">Brand: TimeTech</div>
+
+        <div class="price">₹1,999</div>
+        <div class="old-price">₹2,999</div>
+
+        <p class="info">
+            Smart watch with heart rate monitor, step counter,
+            sleep tracking and notifications. Works with Android and iOS.
+        </p>
+
+        <button class="btn">Add to Cart</button>
+    </div>
+
+</body>
+</html>
+

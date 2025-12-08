@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inline-Block Navigation Examples</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    h1 { margin-bottom: 16px; padding: 20px; }
+
+    /* Top navigation bar */
+    .top-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0f172a;
+      color: white;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .top-nav .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .top-nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+
+    body > main { padding: 20px; }
+
+    /* First inline-block nav */
+    .inline-block-nav {
+      margin-bottom: 24px;
+      background: #f8fffb;
+      padding: 12px;
+      border: 1px dashed #10b981;
+    }
+
+    .inline-block-nav a {
+      display: inline-block;
+      padding: 8px 12px;
+      margin-right: 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #063970;
+      background: #e6f2ff;
+    }
+
+    .inline-block-nav a.badge { font-weight: 700; background: #ffdfe6; color: #6b2140; }
+
+    /* Second inline-block nav */
+    .inline-block-nav2 {
+      margin-bottom: 24px;
+      background: #f0f9ff;
+      padding: 12px;
+      border: 1px dashed #38bdf8;
+    }
+
+    .inline-block-nav2 a {
+      display: inline-block;
+      padding: 8px 12px;
+      margin-right: 10px;
+      border-radius: 6px;
+      background: #e0f2fe;
+      text-decoration: none;
+      color: #075985;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top navigation bar -->
+  <div class="top-nav">
+    <div class="logo">My Website Navigation</div>
+    <div class="links">
+    </div>
+  </div>
+
+  <main>
+    <h1>Inline-Block Navigation Examples</h1>
+
+    <section class="inline-block-nav">
+      <div class="example-title">Shop Navigation</div>
+      <nav>
+        <a href="#">All</a>
+        <a href="#">New</a>
+        <a class="badge" href="#">Sale</a>
+        <a href="#">Best</a>
+      </nav>
+    </section>
+
+    <section class="inline-block-nav2">
+      <div class="example-title2">User Menu</div>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Messages</a>
+        <a href="#">Logout</a>
+      </nav>
+    </section>
+  </main>
+
+</body>
+</html>

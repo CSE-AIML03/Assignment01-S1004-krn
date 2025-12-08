@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile Cards</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
+
+    .cards-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .card {
+      background-color:cadetblue;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      margin:10px;
+      flex:1;
+    }
+
+    .card img {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+
+    .card h3 { margin: 8px 0; font-size: 20px; }
+    .card p { font-size: 14px; color: #555; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Student Profiles</h1>
+  <div class="cards-container">
+    <div class="card">
+      <img src="https://www.shutterstock.com/image-vector/user-icon-man-business-suit-260nw-1909521274.jpg" alt="Student 1">
+      <h3>John Doe</h3>
+      <p>Computer Science</p>
+      <p>GPA: 3.8</p>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMevHBn7WJiBZcne4g_TBr3cxKTTqHls2X1g&s" alt="Student 2">
+      <h3>Jane Smith</h3>
+      <p>Information Technology</p>
+      <p>GPA: 3.9</p>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeXXKGlwmb2OOqcl-uUt66j5UzsHXUVZMQg&s" alt="Student 2">
+      <h3>Jane Smith</h3>
+      <p>Information Technology</p>
+      <p>GPA: 3.9</p>
+    </div>
+
+    
