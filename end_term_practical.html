@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Product Grid</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Tablet breakpoint */
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Product Grid</h1>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71QdB7hDCAL.jpg" alt="Headphones" />
+                <h3 style="font-size: 20px; font-weight: bold; margin: 10px 0;">Wireless Headphones</h3>
+                <p style="font-size: 14px; color: #555; font-family: 'Georgia';">Premium sound with noise cancellation.</p>
+                <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">$49.00</p>
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/61icsCcbdKL.jpg" alt="Smartwatch" />
+                <h3 style="font-size: 20px; font-weight: bold; margin: 10px 0;">Smart Watch</h3>
+                <p style="font-size: 14px; color: #555; font-family: 'Verdana';">Track health, steps, and sleep cycles.</p>
+                <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">$79.00</p>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6aHqZzu9heDE1KWIWDczORXRBFd2QL6FTwQ&s" alt="Camera Lens" />
+                <h3 style="font-size: 20px; font-weight: bold; margin: 10px 0;">Camera Lens</h3>
+                <p style="font-size: 14px; color: #555; font-family: 'Courier New';">Perfect for portraits and low-light photos.</p>
+                <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">$120.00</p>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkzm330_QXVLpQJnT6jKW3ixSYYI9Vka9t6Q&s" alt="Bluetooth Speaker" />
+                <h3 style="font-size: 20px; font-weight: bold; margin: 10px 0;">Bluetooth Speaker</h3>
+                <p style="font-size: 14px; color: #555; font-family: 'Tahoma';">Clear and powerful portable sound.</p>
+                <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">$35.00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
